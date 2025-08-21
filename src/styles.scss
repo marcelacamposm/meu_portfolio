@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    /* O caminho agora começa com /assets/ */
+    background-image: url('/InterfaceInicial.png');
+
+    /* O resto das propriedades continua igual */
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.game-hud {
+    background-color: transparent; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    font-family: 'Press Start 2P';
+    color: #ffffff;
+    padding: 30px 140px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6F2DBD;
+    flex-wrap: wrap;
+     font-size: 1.0rem;
+}
+
+.hud-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px; 
+    margin: 0px 20px;
+}
+
+.player-info p, .page-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hearts-container {
+    img {
+        height: 28px;
+    }
+}
+
+.icon {
+    height: 32px;
+}
+
+.item-counter {
+    flex-direction: row;
+}
