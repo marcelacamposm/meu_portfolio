@@ -1,0 +1,85 @@
+$primary-blue: hsl(232, 60%, 29%);
+$light-purple: #dcdcf2;
+$card-visual-bg: #e8eaf6;
+
+:host {
+  height: 100vh;
+}
+
+.page-container{
+  padding: 0px 0px 0 80px;
+  margin: 120px 0px;
+  height: 100%;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: auto;
+  height: 80%;
+  padding-right: 80px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: $light-purple;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.project-visual {
+  flex: 0 0 15%;
+  aspect-ratio: 16 / 10;
+  background-color: $card-visual-bg;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9fa8da; // Cor do texto "GIF OU FOTO"
+  font-weight: 500;
+
+  img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
+.project-details {
+  flex: 1; // O texto ocupa o resto do espaço
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin-bottom: 10px;
+
+  h2 {
+    margin: 0;
+    color: $primary-blue;
+    font-weight: 700;
+  }
+
+  .github-icon {
+    width: 28px;
+    height: 28px;
+    color: $primary-blue;
+    transition: transform 0.3s ease;
+  }
+
+  a:hover .github-icon {
+    transform: scale(1.15); // Efeito de zoom no hover
+  }
+}
+
+p {
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+}

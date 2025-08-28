@@ -7,17 +7,10 @@ import { Home } from './home/home';
 import { RenderMode } from '@angular/ssr';
 
 export const routes: Routes = [ 
-    { path: '', component: Home, pathMatch: 'full',
-        data: {
-            ssr: {
-                renderMode: RenderMode.Client,
-            }
-        }}, 
-
-    { path: 'sobre', component: Sobre },
-    { path: 'projetos', component: Projetos },
-    { path: 'experiencias', component: Experiencias },
-    { path: 'contato', component: Contato },
-
+    { path: '', redirectTo: 'aboutme', pathMatch: 'full',}, 
+    { path: 'aboutme', component: Home },
+    { path: 'projects', component: Projetos },
+    { path: 'experiences', component: Experiencias },
+    { path: 'contact', component: Contato },
     { path: '**', redirectTo: '/' }
 ];

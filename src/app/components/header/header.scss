@@ -1,42 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-.game-hud {
-    background-color: transparent; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;          
-    font-family: 'Press Start 2P';
-    color: #ffffff;
-    padding: 30px 140px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #6F2DBD;
-    flex-wrap: wrap;
-     font-size: 1.0rem;
+:host {
+  display: block;
+  width: 100%;
+  background-color: transparent;
 }
 
-.hud-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px; 
-    margin: 0px 20px;
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.player-info p, .page-info p {
+.logo a {
+  text-decoration: none;
+  color: #1e2a78;
+  font-weight: 700;
+  font-size: 1.2em;
+
+  span {
+    color: #5c6bc0;
+    font-weight: 400;
+  }
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  ul {
+    display: flex;
+    list-style: none;
     margin: 0;
-    line-height: 1.2;
-}
+    padding: 0;
+    gap: 30px;
+  }
 
-.hearts-container {
-    img {
-        height: 28px;
+  a {
+    text-decoration: none;
+    color: #1e2a78;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-bottom-color: #5c6bc0;
     }
+  }
 }
 
-.icon {
-    height: 32px;
-}
+.lang-toggle {
+  background: none;
+  border: 1px solid #1e2a78;
+  border-radius: 15px;
+  color: #1e2a78;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
 
-.item-counter {
-    flex-direction: row;
+  &:hover {
+    background-color: #1e2a78;
+    color: #fff;
+  }
 }
