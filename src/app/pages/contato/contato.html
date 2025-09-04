@@ -1,36 +1,29 @@
 <div class="page-container">
   <div class="contact-card">
     <p class="intro-text">
-      Atualmente, estou em busca da minha primeira oportunidade na área de Tecnologia. Sinta-se à vontade para entrar em contato — adoraria conversar!
-      Você pode me enviar um email ou preencher o formulário abaixo.
+      I am currently employed, but please feel free to send me a message. I would love to chat!
     </p>
 
     <p class="email-info">Email: marcelacamposm2@gmail.com</p>
 
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
       <div class="form-group">
-        <label for="name">Seu Nome:</label>
-        <input id="name" type="text" formControlName="name">
+        <label for="name">Name:</label>
+        <input id="name" type="text" formControlName="name" required>
       </div>
 
       <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input id="email" type="email" formControlName="email">
+        <label for="email">Email:</label>
+        <input id="email" type="email" formControlName="email" required>
       </div>
-
       <div class="form-group">
-        <label for="company">Empresa (Opcional):</label>
-        <input id="company" type="text" formControlName="company">
-      </div>
-
-      <div class="form-group">
-        <label for="message">Mensagem:</label>
-        <textarea id="message" rows="6" formControlName="message"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="6" formControlName="message" required></textarea>
       </div>
 
       <div class="form-footer">
-        <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">ENVIAR</button>
-        <span class="info-text">As mensagens são encaminhadas diretamente para o meu email.</span>
+        <button type="submit" [disabled]="!contactForm.valid" class="submit-btn">SEND</button>
+        <span class="info-text">The message go directly for my E-mail.</span>
       </div>
     </form>
   </div>

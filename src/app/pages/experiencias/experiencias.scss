@@ -3,13 +3,14 @@ $light-purple: #dcdcf2;
 $card-visual-bg: #e8eaf6;
 
 :host {
-  height: 100vh;
+  display: block;
+  height: 100%;
 }
 
 .page-container{
-  padding: 0px 0px 0 80px;
-  margin: 120px 0px;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .projects-list {
@@ -17,9 +18,10 @@ $card-visual-bg: #e8eaf6;
   flex-direction: column;
   gap: 40px;
   overflow-y: auto;
-  height: 80%;
-  padding-right: 80px;
+  height: 95%;
+  padding: 0 80px;
 }
+
 
 .project-card {
   display: flex;
